@@ -1,5 +1,6 @@
 :root {
     /* ----- PRIMITIVES ----- */
+
     /* ----- Color ----- */
     --primitive-brandyRed: hsl(14, 45%, 36%);
     --primitive-darkRaspberry: hsl(332, 51%, 32%);
@@ -9,4 +10,22 @@
     --primitive-lightGrey: hsl(30, 18%, 87%);
     --primitive-wengeBrown: hsl(30, 10%, 34%);
     --primtive-darkCharcoal: hsl(24, 5%, 18%);
+
+    /* ----- Typography ----- */
+    /* font-family */
+    --primitive-ff-one: 'Young Serif', sans-serif;
+    --primitive-ff-two: 'Outfit', sans-serif;
+    /* font-size */
+    --primitive-fs-40: 2.5rem;
+    --primitive-fs-36: 2.25rem;
+    --primitive-fs-28: 1.75rem;
+    --primitive-fs-20: 1.25rem;
+    --primitive-fs-16: 1rem;
+    /* font-weight */
+    --primitive-fw-400: 400;
+    --primitive-fw-600: 600;
+    --primitive-fw-700: 700;
+    /* line-height */
+    --primitive-lh-100: 1;
+    --primitive-lh-150: 1.5;
 }
