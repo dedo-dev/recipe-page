@@ -1,0 +1,12 @@
+:root {
+    /* ----- PRIMITIVES ----- */
+    /* ----- Color ----- */
+    --primitive-brandyRed: hsl(14, 45%, 36%);
+    --primitive-darkRaspberry: hsl(332, 51%, 32%);
+    --primitive-white: hsl(0, 0%, 100%);
+    --primitive-roseWhite: hsl(330, 100%, 98%);
+    --primitive-eggshell: hsl(30, 54%, 90%);
+    --primitive-lightGrey: hsl(30, 18%, 87%);
+    --primitive-wengeBrown: hsl(30, 10%, 34%);
+    --primtive-darkCharcoal: hsl(24, 5%, 18%);
+}
