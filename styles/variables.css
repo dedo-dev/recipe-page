@@ -53,6 +53,20 @@
     --clr-cardInfoHeading: var(--primitive-darkRaspberry);
     --clr-accent: var(--primitive-brandyRed);
 
+    /* ----- Typography ----- */
+    /* font-family */
+    --ff-body: var(--primitive-ff-one);
+    --ff-cardHeadings: var(--primitive-ff-two);
+    --ff-cardInfoHeading: var(--primitive-ff-one);
+    /* font-size */
+    --fs-body: var(--primitive-fs-16);
+    --fs-cardMainHeadingMobile: var(--primitive-fs-36);
+    --fs-cardMainHeadingDesktop: var(--primitive-fs-40);
+    --fs-cardIfoHeading: var(--primitive-fs-20);
+    --fs-cardSectionHeading: var(--primitive-fs-28);
+    /* font-weight */
+    --fw-cardIfoHeading: var(--primitive-fw-600);
+    --fw-accent: var(--primitive-fw-700);
 
 
 
