@@ -28,4 +28,32 @@
     /* line-height */
     --primitive-lh-100: 1;
     --primitive-lh-150: 1.5;
+
+    /* ----- Spacing ----- */
+    /* padding */
+    --primitive-p-40: 2.5em;
+    --primitive-p-32: 2em;
+    --primitive-p-28: 1.75em;
+    --primitive-p-24: 1.5em;
+    --primitive-p-0: 0;
+    /* margin */
+    --primitive-m-40: 2.5rem;
+    --primitive-m-32: 2rem;
+    --primitive-m-24: 1.5rem;
+    --primitive-m-16: 1rem;
+    --primitive-m-0: 0;
+
+    /* ----- TOKENS ----- */
+    /* ----- Color ----- */
+    --clr-bodyBG: var(--primitive-eggshell);
+    --clr-bodyTxt: var(--primitive-wengeBrown);
+    --clr-cardBG: var(--primitive-white);
+    --clr-cardMainHeading: var(--primtive-darkCharcoal);
+    --clr-cardSectionHeading: var(--primitive-brandyRed);
+    --clr-cardInfoHeading: var(--primitive-darkRaspberry);
+    --clr-accent: var(--primitive-brandyRed);
+
+
+
+
 }
