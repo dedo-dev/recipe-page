@@ -22,8 +22,10 @@ body {
 }
 
 .card-recipe {
+    container: card / inline-size;
     display: flex;
     flex-direction: column;
+    background: var(--clr-cardBG);
 }
 
 .card-recipe__body {
@@ -34,12 +36,33 @@ body {
     padding-block: var(--primitive-p-40);
 }
 
-.bold {
-    font-weight: var(--primitive-fw-700);
+.card-recipe__section-title {
+    font-family: var(--ff-cardHeadings);
+    font-size: var(--fs-cardSectionHeading);
+    font-weight: var(--fw-cardSectionHeading);
+    line-height: var(--primitive-lh-100);
+    color: var(--clr-cardSectionHeading);
 }
+
+.card-recipe__section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--primitive-m-24);
+}
+
+.card-recipe__section-title--main {
+    font-size: var(--fs-cardMainHeadingMobile);
+}
+
+
+/* ----- UTILITY CLASS ----- */
 
 .accent {
     color: var(--clr-accent);
+}
+
+.bold {
+    font-weight: var(--primitive-fw-700);
 }
 
 
@@ -126,8 +149,8 @@ body {
     /* ----- Typography ----- */
     /* font-family */
     --ff-body: var(--primitive-ff-two);
-    --ff-cardHeadings: var(--primitive-ff-two);
-    --ff-cardInfoHeading: var(--primitive-ff-one);
+    --ff-cardHeadings: var(--primitive-ff-one);
+    --ff-cardInfoHeading: var(--primitive-ff-two);
     /* font-size */
     --fs-body: var(--primitive-fs-16);
     --fs-cardMainHeadingMobile: var(--primitive-fs-36);
@@ -135,8 +158,11 @@ body {
     --fs-cardIfoHeading: var(--primitive-fs-20);
     --fs-cardSectionHeading: var(--primitive-fs-28);
     /* font-weight */
+    --fw-cardSectionHeading: var(--primitive-fw-400);
     --fw-cardIfoHeading: var(--primitive-fw-600);
-    --fw-accent: var(--primitive-fw-700);
+    --fw-regular: var(--primitive-fw-400);
+    --fw-bold: var(--primitive-fw-700);
+    --fw-semi-bold: var(--primitive-fw-600);
     /* line-height */
     --lh-heading: var(--primitive-lh-100);
 }
