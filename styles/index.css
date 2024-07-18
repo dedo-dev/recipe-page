@@ -21,6 +21,51 @@ body {
     color: var(--clr-bodyTxt);
 }
 
+.card-recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-recipe__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--primitive-m-32);
+    padding-inline: var(--primitive-p-32);
+    padding-block: var(--primitive-p-40);
+}
+
+.bold {
+    font-weight: var(--primitive-fw-700);
+}
+
+.accent {
+    color: var(--clr-accent);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
