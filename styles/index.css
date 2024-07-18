@@ -1,2 +1,97 @@
+@import url("reset.css");
+/* @import url("variables.css"); */
+
+@font-face {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-style: normal;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-weight: 400 600 700;
+    font-style: normal;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: var(--ff-body);
+    background: var(--clr-bodyBG);
+    color: var(--clr-bodyTxt);
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    /* ----- PRIMITIVES ----- */
+
+    /* ----- Color ----- */
+    --primitive-brandyRed: hsl(14, 45%, 36%);
+    --primitive-darkRaspberry: hsl(332, 51%, 32%);
+    --primitive-white: hsl(0, 0%, 100%);
+    --primitive-roseWhite: hsl(330, 100%, 98%);
+    --primitive-eggshell: hsl(30, 54%, 90%);
+    --primitive-lightGrey: hsl(30, 18%, 87%);
+    --primitive-wengeBrown: hsl(30, 10%, 34%);
+    --primtive-darkCharcoal: hsl(24, 5%, 18%);
+
+    /* ----- Typography ----- */
+    /* font-family */
+    --primitive-ff-one: 'Young Serif', sans-serif;
+    --primitive-ff-two: 'Outfit', sans-serif;
+    /* font-size */
+    /* --primitive-fs-40: 2.5rem; */
+    --primitive-fs-36: 2.25rem;
+    --primitive-fs-28: 1.75rem;
+    --primitive-fs-20: 1.25rem;
+    --primitive-fs-16: 1rem;
+    /* font-weight */
+    --primitive-fw-400: 400;
+    --primitive-fw-600: 600;
+    --primitive-fw-700: 700;
+    /* line-height */
+    --primitive-lh-100: 1;
+
+    /* ----- Spacing ----- */
+    /* padding */
+    --primitive-p-40: 2.5em;
+    --primitive-p-32: 2em;
+    --primitive-p-28: 1.75em;
+    --primitive-p-24: 1.5em;
+    --primitive-p-0: 0;
+    /* margin */
+    --primitive-m-40: 2.5rem;
+    --primitive-m-32: 2rem;
+    --primitive-m-24: 1.5rem;
+    --primitive-m-16: 1rem;
+    --primitive-m-0: 0;
+
+    /* ----- TOKENS ----- */
+    /* ----- Color ----- */
+    --clr-bodyBG: var(--primitive-eggshell);
+    --clr-bodyTxt: var(--primitive-wengeBrown);
+    --clr-cardBG: var(--primitive-white);
+    --clr-cardMainHeading: var(--primtive-darkCharcoal);
+    --clr-cardSectionHeading: var(--primitive-brandyRed);
+    --clr-cardInfoHeading: var(--primitive-darkRaspberry);
+    --clr-accent: var(--primitive-brandyRed);
+
+    /* ----- Typography ----- */
+    /* font-family */
+    --ff-body: var(--primitive-ff-two);
+    --ff-cardHeadings: var(--primitive-ff-two);
+    --ff-cardInfoHeading: var(--primitive-ff-one);
+    /* font-size */
+    --fs-body: var(--primitive-fs-16);
+    --fs-cardMainHeadingMobile: var(--primitive-fs-36);
+    --fs-cardMainHeadingDesktop: var(--primitive-fs-40);
+    --fs-cardIfoHeading: var(--primitive-fs-20);
+    --fs-cardSectionHeading: var(--primitive-fs-28);
+    /* font-weight */
+    --fw-cardIfoHeading: var(--primitive-fw-600);
+    --fw-accent: var(--primitive-fw-700);
+    /* line-height */
+    --lh-heading: var(--primitive-lh-100);
+}
