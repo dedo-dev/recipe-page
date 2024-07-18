@@ -58,11 +58,27 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--primitive-m-8);
-    padding-inline-start: var(--primitive-p-8);
+    padding: var(--primitive-p-0);
+    list-style-position: inside;
 }
-/*
+
 .card-recipe__list-item {
     padding-inline-start: var(--primitive-p-8);
+}
+
+/* .card-recipe__list-item::before {
+    content: '';
+    margin-inline-start: var(--primitive-m-32);
+} */
+li span {
+    position: relative;
+    left: 16px;
+    margin-inline-end: 16px;
+}
+
+/*.card-recipe__list-item::marker {
+    padding-right: var(--primitive-m-32);
+    list-style: square;
 } */
 
 /* ----- TYPOGRAPHY ----- */
