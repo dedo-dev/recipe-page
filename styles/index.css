@@ -26,10 +26,16 @@ body {
 }
 
 /* ----- LAYOUT ----- */
+main {
+    margin-block: 9.375rem 6rem;
+}
+
 .card-recipe {
     container: card / inline-size;
     display: flex;
     flex-direction: column;
+    max-width: 46rem;
+    margin-inline: auto;
     background: var(--clr-cardBG);
 }
 
@@ -89,35 +95,16 @@ ol > li::before {
     position: relative;
     counter-increment: list-num;
     content: counter(list-num) ". ";
-    /* left: 8px; */
+    left: 8px;
     font-size: 16px;
     font-weight: 700;
     color: var(--clr-cardSectionHeading);
 }
 
-/* table {
-    outline: 1px solid red;
-    border-collapse: collapse;
-    min-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
-
-td {
-    border-block-end: 1px solid var(--clr-cardSectionHeading);
-    /* display: contents; */
-    /* outline: 1px solid blue; */
+::marker {
+    color: var(--clr-cardSectionHeading);
+    font-weight: var(--fw-bold);
 }
-
-/* td {
-    outline: 1px solid orange;
-    padding: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
-
 /* .card-recipe__list {
     display: flex;
     flex-direction: column;
@@ -133,7 +120,6 @@ td {
     padding: var(--primitive-p-24);
 } */
 
-
 /* li > span {
     display: inline-block;
     vertical-align: middle;
@@ -144,10 +130,6 @@ td {
     color: var(--clr-cardInfoHeading);
 } */
 
-::marker {
-    color: var(--clr-cardSectionHeading);
-    font-weight: var(--fw-bold);
-}
 
 /* ----- TYPOGRAPHY ----- */
 .card-recipe__section-title {
