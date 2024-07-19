@@ -53,28 +53,70 @@ body {
     gap: var(--primitive-m-16);
     border-radius: .75rem;
 }
-ul {
+
+ul, ol {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 0;
 }
- li {
+
+ol {
+    list-style-position: inside;
+    counter-reset: list-num;
+}
+
+.bullett {
     display: flex;
     align-items: center;
     gap: 28px;
- }
+}
 
- li::before {
+.bullett::before {
+    position: relative;
     content: '\2022';
-    border: 1px solid red;
     left: 8px;
     font-size: 1.5rem;
- }
+}
 
+ol > li {
+    display: flex;
+    align-items: start;
+    gap: 28px;
+}
 
+ol > li::before {
+    position: relative;
+    counter-increment: list-num;
+    content: counter(list-num) ". ";
+    /* left: 8px; */
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--clr-cardSectionHeading);
+}
 
+/* table {
+    outline: 1px solid red;
+    border-collapse: collapse;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
 
+td {
+    border-block-end: 1px solid var(--clr-cardSectionHeading);
+    /* display: contents; */
+    /* outline: 1px solid blue; */
+}
+
+/* td {
+    outline: 1px solid orange;
+    padding: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */
 
 /* .card-recipe__list {
     display: flex;
@@ -98,12 +140,13 @@ ul {
     padding-inline-start: var(--primitive-p-40);
 } */
 
-.card-recipe__list-item--info::marker {
+/* .card-recipe__list-item--info::marker {
     color: var(--clr-cardInfoHeading);
-}
+} */
 
 ::marker {
     color: var(--clr-cardSectionHeading);
+    font-weight: var(--fw-bold);
 }
 
 /* ----- TYPOGRAPHY ----- */
@@ -138,7 +181,9 @@ ul {
     font-weight: var(--primitive-fw-700);
 }
 
-
+.divider {
+    border-block-start: 1px solid var(--clr-divider);
+}
 
 
 
@@ -221,6 +266,7 @@ ul {
     --clr-cardInfoBG: var(--primitive-roseWhite);
     --clr-cardInfoHeading: var(--primitive-darkRaspberry);
     --clr-accent: var(--primitive-brandyRed);
+    --clr-divider: var(--primitive-lightGrey);
 
     /* ----- Typography ----- */
     /* font-family */
