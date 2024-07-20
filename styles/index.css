@@ -135,7 +135,6 @@ table {
 }
 
 tr  {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--primitive-m-16);
     border-block-end: 1px solid var(--clr-divider);
