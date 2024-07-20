@@ -1,6 +1,6 @@
 /* ----- IMPORT CSS FILES ----- */
 @import url("reset.css");
-/* @import url("variables.css"); */
+@import url("variables.css");
 
 /* ----- TYPOGRAPHY ----- */
 @font-face {
@@ -17,6 +17,7 @@
     src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
+/* Style for all section title */
 .card-recipe__section-title {
     font-family: var(--ff-cardHeadings);
     font-size: var(--fs-cardSectionHeading);
@@ -25,11 +26,13 @@
     color: var(--clr-cardSectionHeading);
 }
 
+/* Modifier for the main heading */
 .card-recipe__section-title--main {
     font-size: var(--fs-cardMainHeadingMobile);
     color: var(--clr-cardMainHeading);
 }
 
+/* Modifier for the preparetion banner */
 .card-recipe__info-title {
     font-size: var(--fs-cardIfoHeading);
     font-weight: var(--fw-cardIfoHeading);
@@ -43,31 +46,39 @@ body {
     color: var(--clr-bodyTxt);
 }
 
+/* Used to set a parent container
+   to work with container queries */
 .wrapper {
     container: card / inline-size;
 }
 
+/* Main card container */
 .card-recipe {
     max-width: 46rem;
     margin-inline: auto;
     background: var(--clr-cardBG);
-    border-radius: 24px;
+    border-radius: 1.5rem;
 }
 
+/* This is the container for all card content */
 .card-recipe__body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* display: flex;
+    flex-direction: column; */
     gap: var(--primitive-m-32);
     padding-inline: var(--primitive-p-32);
     padding-block: var(--primitive-p-40);
 }
 
+/* Class to style all section */
 .card-recipe__section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* display: flex;
+    flex-direction: column; */
     gap: var(--primitive-m-24);
 }
 
+/* Modifier to style preparation banner */
 .card-recipe__section--info {
     background: var(--clr-cardInfoBG);
     padding: var(--primitive-p-24);
@@ -76,9 +87,10 @@ body {
 }
 
 ul, ol {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display: grid;
+    /* display: flex;
+    flex-direction: column; */
+    gap: .5rem;
     padding: 0;
 }
 
@@ -121,6 +133,9 @@ ol > li::before {
     font-weight: var(--fw-bold);
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 /* ----- LAYOUT DEVICE > 900PX ----- */
 @container card (inline-size > 56.25em) {
 
@@ -146,15 +161,6 @@ ol > li::before {
         padding: var(--primitive-p-28);
     }
 }
-
-
-
-
-
-
-
-
-
 
 /* .card-recipe__list {
     display: flex;
@@ -182,7 +188,6 @@ ol > li::before {
 } */
 
 /* ----- UTILITY CLASS ----- */
-
 .accent {
     color: var(--clr-accent);
 }
@@ -194,28 +199,3 @@ ol > li::before {
 .divider {
     border-block-start: 1px solid var(--clr-divider);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
