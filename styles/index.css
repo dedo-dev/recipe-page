@@ -1,6 +1,8 @@
+/* ----- IMPORT CSS FILES ----- */
 @import url("reset.css");
 /* @import url("variables.css"); */
 
+/* ----- TYPOGRAPHY ----- */
 @font-face {
     font-family: 'Young Serif';
     font-weight: 400;
@@ -15,28 +17,41 @@
     src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
-hr {
-    width: 100%;
+.card-recipe__section-title {
+    font-family: var(--ff-cardHeadings);
+    font-size: var(--fs-cardSectionHeading);
+    font-weight: var(--fw-cardSectionHeading);
+    line-height: var(--primitive-lh-100);
+    color: var(--clr-cardSectionHeading);
 }
 
+.card-recipe__section-title--main {
+    font-size: var(--fs-cardMainHeadingMobile);
+    color: var(--clr-cardMainHeading);
+}
+
+.card-recipe__info-title {
+    font-size: var(--fs-cardIfoHeading);
+    font-weight: var(--fw-cardIfoHeading);
+    color: var(--clr-cardInfoHeading);
+}
+
+/* ----- LAYOUT ----- */
 body {
     font-family: var(--ff-body);
     background: var(--clr-bodyBG);
     color: var(--clr-bodyTxt);
 }
 
-/* ----- LAYOUT ----- */
-main {
-    margin-block: 9.375rem 6rem;
+.wrapper {
+    container: card / inline-size;
 }
 
 .card-recipe {
-    container: card / inline-size;
-    display: flex;
-    flex-direction: column;
     max-width: 46rem;
     margin-inline: auto;
     background: var(--clr-cardBG);
+    border-radius: 24px;
 }
 
 .card-recipe__body {
@@ -105,6 +120,42 @@ ol > li::before {
     color: var(--clr-cardSectionHeading);
     font-weight: var(--fw-bold);
 }
+
+/* ----- LAYOUT DEVICE > 900PX ----- */
+@container card (inline-size > 56.25em) {
+
+    .card-recipe {
+        margin-block: 9.375rem 6rem;
+        padding: var(--primitive-p-40);
+    }
+
+    .card-recipe__img {
+        border-radius: 12px;
+    }
+
+    .card-recipe__body {
+        padding-block: var(--primitive-p-40) var(--primitive-p-0);
+        padding-inline: var(--primitive-p-0);
+    }
+
+    .card-recipe__section-title--main {
+        font-size: 40px;
+    }
+
+    .card-recipe__section--info {
+        padding: var(--primitive-p-28);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* .card-recipe__list {
     display: flex;
     flex-direction: column;
@@ -129,29 +180,6 @@ ol > li::before {
 /* .card-recipe__list-item--info::marker {
     color: var(--clr-cardInfoHeading);
 } */
-
-
-/* ----- TYPOGRAPHY ----- */
-.card-recipe__section-title {
-    font-family: var(--ff-cardHeadings);
-    font-size: var(--fs-cardSectionHeading);
-    font-weight: var(--fw-cardSectionHeading);
-    line-height: var(--primitive-lh-100);
-    color: var(--clr-cardSectionHeading);
-}
-
-.card-recipe__section-title--main {
-    font-size: var(--fs-cardMainHeadingMobile);
-}
-
-.card-recipe__info-title {
-    font-size: var(--fs-cardIfoHeading);
-    font-weight: var(--fw-cardIfoHeading);
-    color: var(--clr-cardInfoHeading);
-}
-
-
-
 
 /* ----- UTILITY CLASS ----- */
 
@@ -191,82 +219,3 @@ ol > li::before {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-:root {
-    /* ----- PRIMITIVES ----- */
-
-    /* ----- Color ----- */
-    --primitive-brandyRed: hsl(14, 45%, 36%);
-    --primitive-darkRaspberry: hsl(332, 51%, 32%);
-    --primitive-white: hsl(0, 0%, 100%);
-    --primitive-roseWhite: hsl(330, 100%, 98%);
-    --primitive-eggshell: hsl(30, 54%, 90%);
-    --primitive-lightGrey: hsl(30, 18%, 87%);
-    --primitive-wengeBrown: hsl(30, 10%, 34%);
-    --primtive-darkCharcoal: hsl(24, 5%, 18%);
-
-    /* ----- Typography ----- */
-    /* font-family */
-    --primitive-ff-one: 'Young Serif', sans-serif;
-    --primitive-ff-two: 'Outfit', sans-serif;
-    /* font-size */
-    /* --primitive-fs-40: 2.5rem; */
-    --primitive-fs-36: 2.25rem;
-    --primitive-fs-28: 1.75rem;
-    --primitive-fs-20: 1.25rem;
-    --primitive-fs-16: 1rem;
-    /* font-weight */
-    --primitive-fw-400: 400;
-    --primitive-fw-600: 600;
-    --primitive-fw-700: 700;
-    /* line-height */
-    --primitive-lh-100: 1;
-
-    /* ----- Spacing ----- */
-    /* padding */
-    --primitive-p-40: 2.5em;
-    --primitive-p-32: 2em;
-    --primitive-p-28: 1.75em;
-    --primitive-p-24: 1.5em;
-    --primitive-p-8: .5em;
-    --primitive-p-0: 0;
-    /* margin */
-    --primitive-m-40: 2.5rem;
-    --primitive-m-32: 2rem;
-    --primitive-m-24: 1.5rem;
-    --primitive-m-16: 1rem;
-    --primitive-m-8: .5rem;
-    --primitive-m-0: 0;
-
-    /* ----- TOKENS ----- */
-    /* ----- Color ----- */
-    --clr-bodyBG: var(--primitive-eggshell);
-    --clr-bodyTxt: var(--primitive-wengeBrown);
-    --clr-cardBG: var(--primitive-white);
-    --clr-cardMainHeading: var(--primtive-darkCharcoal);
-    --clr-cardSectionHeading: var(--primitive-brandyRed);
-    --clr-cardInfoBG: var(--primitive-roseWhite);
-    --clr-cardInfoHeading: var(--primitive-darkRaspberry);
-    --clr-accent: var(--primitive-brandyRed);
-    --clr-divider: var(--primitive-lightGrey);
-
-    /* ----- Typography ----- */
-    /* font-family */
-    --ff-body: var(--primitive-ff-two);
-    --ff-cardHeadings: var(--primitive-ff-one);
-    --ff-cardInfoHeading: var(--primitive-ff-two);
-    /* font-size */
-    --fs-body: var(--primitive-fs-16);
-    --fs-cardMainHeadingMobile: var(--primitive-fs-36);
-    --fs-cardMainHeadingDesktop: var(--primitive-fs-40);
-    --fs-cardIfoHeading: var(--primitive-fs-20);
-    --fs-cardSectionHeading: var(--primitive-fs-28);
-    /* font-weight */
-    --fw-cardSectionHeading: var(--primitive-fw-400);
-    --fw-cardIfoHeading: var(--primitive-fw-600);
-    --fw-regular: var(--primitive-fw-400);
-    --fw-semi-bold: var(--primitive-fw-600);
-    --fw-bold: var(--primitive-fw-700);
-    /* line-height */
-    --lh-heading: var(--primitive-lh-100);
-}
