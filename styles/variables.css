@@ -16,7 +16,7 @@
     --primitive-ff-one: 'Young Serif', sans-serif;
     --primitive-ff-two: 'Outfit', sans-serif;
     /* font-size */
-    --primitive-fs-40: 2.5rem;
+    /* --primitive-fs-40: 2.5rem; */
     --primitive-fs-36: 2.25rem;
     --primitive-fs-28: 1.75rem;
     --primitive-fs-20: 1.25rem;
@@ -27,7 +27,6 @@
     --primitive-fw-700: 700;
     /* line-height */
     --primitive-lh-100: 1;
-    --primitive-lh-150: 1.5;
 
     /* ----- Spacing ----- */
     /* padding */
@@ -35,12 +34,14 @@
     --primitive-p-32: 2em;
     --primitive-p-28: 1.75em;
     --primitive-p-24: 1.5em;
+    --primitive-p-8: .5em;
     --primitive-p-0: 0;
     /* margin */
     --primitive-m-40: 2.5rem;
     --primitive-m-32: 2rem;
     --primitive-m-24: 1.5rem;
     --primitive-m-16: 1rem;
+    --primitive-m-8: .5rem;
     --primitive-m-0: 0;
 
     /* ----- TOKENS ----- */
@@ -50,21 +51,28 @@
     --clr-cardBG: var(--primitive-white);
     --clr-cardMainHeading: var(--primtive-darkCharcoal);
     --clr-cardSectionHeading: var(--primitive-brandyRed);
+    --clr-cardInfoBG: var(--primitive-roseWhite);
     --clr-cardInfoHeading: var(--primitive-darkRaspberry);
     --clr-accent: var(--primitive-brandyRed);
+    --clr-divider: var(--primitive-lightGrey);
 
     /* ----- Typography ----- */
     /* font-family */
-    --ff-body: var(--primitive-ff-one);
-    --ff-cardHeadings: var(--primitive-ff-two);
-    --ff-cardInfoHeading: var(--primitive-ff-one);
+    --ff-body: var(--primitive-ff-two);
+    --ff-cardHeadings: var(--primitive-ff-one);
+    --ff-cardInfoHeading: var(--primitive-ff-two);
     /* font-size */
     --fs-body: var(--primitive-fs-16);
-    --fs-cardMainHeadingMobile: var(--primitive-fs-36);
     --fs-cardMainHeadingDesktop: var(--primitive-fs-40);
+    --fs-cardMainHeadingMobile: var(--primitive-fs-36);
     --fs-cardIfoHeading: var(--primitive-fs-20);
     --fs-cardSectionHeading: var(--primitive-fs-28);
     /* font-weight */
+    --fw-cardSectionHeading: var(--primitive-fw-400);
     --fw-cardIfoHeading: var(--primitive-fw-600);
-    --fw-accent: var(--primitive-fw-700);
+    --fw-regular: var(--primitive-fw-400);
+    --fw-semi-bold: var(--primitive-fw-600);
+    --fw-bold: var(--primitive-fw-700);
+    /* line-height */
+    --lh-heading: var(--primitive-lh-100);
 }
