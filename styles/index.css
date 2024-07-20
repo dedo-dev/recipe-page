@@ -129,6 +129,27 @@ body {
     color: var(--clr-cardSectionHeading);
 }
 
+/* Style for nutrition table */
+table {
+    border-collapse: collapse;
+}
+
+tr  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--primitive-m-16);
+    border-block-end: 1px solid var(--clr-divider);
+}
+
+td {
+    padding-inline: var(--primitive-p-32) 0;
+    padding-block: .75rem;
+}
+
+td:last-child {
+    padding-inline: 0 var(--primitive-p-32);
+}
+
 /* Style for footer content */
 .attribution {
     font-size: var(--fs-attribution);
