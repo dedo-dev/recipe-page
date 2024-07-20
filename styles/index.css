@@ -57,14 +57,10 @@ body {
     max-width: 46rem;
     margin-inline: auto;
     background: var(--clr-cardBG);
-    border-radius: 1.5rem;
 }
 
 /* This is the container for all card content */
 .card-recipe__body {
-    display: grid;
-    /* display: flex;
-    flex-direction: column; */
     gap: var(--primitive-m-32);
     padding-inline: var(--primitive-p-32);
     padding-block: var(--primitive-p-40);
@@ -72,9 +68,6 @@ body {
 
 /* Class to style all section */
 .card-recipe__section {
-    display: grid;
-    /* display: flex;
-    flex-direction: column; */
     gap: var(--primitive-m-24);
 }
 
@@ -86,55 +79,67 @@ body {
     border-radius: .75rem;
 }
 
-ul, ol {
-    display: grid;
-    /* display: flex;
-    flex-direction: column; */
+/* ul and ol style */
+.card-recipe__list {
     gap: .5rem;
     padding: 0;
 }
 
-ol {
+/* Set marker position inside to ol */
+.card-recipe__section > ol {
     list-style-position: inside;
     counter-reset: list-num;
 }
 
-.bullett {
+/* General style for li items */
+.card-recipe__list-item {
     display: flex;
-    align-items: center;
-    gap: 28px;
+    gap: var(--primitive-m-28);
 }
 
+/* Align bullett points vertically
+   center with the text inside li
+*/
+.bullett {
+    align-items: center;
+}
+
+/* Define bullett points for ul li */
 .bullett::before {
     position: relative;
     content: '\2022';
-    left: 8px;
+    left: .5rem;
     font-size: 1.5rem;
+    color: var(--clr-cardSectionHeading);
 }
 
-ol > li {
-    display: flex;
-    align-items: start;
-    gap: 28px;
+/* Bulletts modifier to set the color
+   to the bulletts of card banner*/
+.bullett--info::before {
+    color: var(--clr-cardInfoHeading);
 }
 
-ol > li::before {
+/* Define number points for ol li */
+.numered::before {
     position: relative;
     counter-increment: list-num;
     content: counter(list-num) ". ";
-    left: 8px;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--clr-cardSectionHeading);
-}
-
-::marker {
-    color: var(--clr-cardSectionHeading);
+    left: .5rem;
     font-weight: var(--fw-bold);
+    color: var(--clr-cardSectionHeading);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* Style for footer content */
+.attribution {
+    font-size: var(--fs-attribution);
+    text-align: center;
+    padding: 0.125rem;
+}
+
+.attribution a {
+    color: var(--clr-accent);
+    text-underline-offset: .125rem;
+}
 
 /* ----- LAYOUT DEVICE > 900PX ----- */
 @container card (inline-size > 56.25em) {
@@ -142,10 +147,11 @@ ol > li::before {
     .card-recipe {
         margin-block: 9.375rem 6rem;
         padding: var(--primitive-p-40);
+        border-radius: 1.5rem;
     }
 
     .card-recipe__img {
-        border-radius: 12px;
+        border-radius: .75rem;
     }
 
     .card-recipe__body {
@@ -154,7 +160,7 @@ ol > li::before {
     }
 
     .card-recipe__section-title--main {
-        font-size: 40px;
+        font-size: var(--fs-cardMainHeadingDesktop);
     }
 
     .card-recipe__section--info {
@@ -162,40 +168,15 @@ ol > li::before {
     }
 }
 
-/* .card-recipe__list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--primitive-m-8);
-    padding-inline-end: 32px;
-    padding: var(--primitive-p-0);
-    list-style: inside;
-} */
-
-/* .card-recipe__list-item {
-    padding-inline-start: 24px;
-    padding-inline-start: var(--primitive-p-8);
-    padding: var(--primitive-p-24);
-} */
-
-/* li > span {
-    display: inline-block;
-    vertical-align: middle;
-    padding-inline-start: var(--primitive-p-40);
-} */
-
-/* .card-recipe__list-item--info::marker {
-    color: var(--clr-cardInfoHeading);
-} */
-
 /* ----- UTILITY CLASS ----- */
 .accent {
     color: var(--clr-accent);
 }
 
-.bold {
-    font-weight: var(--primitive-fw-700);
-}
-
 .divider {
     border-block-start: 1px solid var(--clr-divider);
+}
+
+.d-grid {
+    display: grid;
 }
