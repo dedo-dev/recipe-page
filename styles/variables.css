@@ -34,16 +34,18 @@
     --primitive-p-32: 2em;
     --primitive-p-28: 1.75em;
     --primitive-p-24: 1.5em;
+    --primitive-p-12: .75em;
     --primitive-p-8: .5em;
-    --primitive-p-0: 0;
+    --primitive-p-2: .125em;
     /* margin */
-    --primitive-m-40: 2.5rem;
+    --primitive-m-150: 9.375rem;
+    --primitive-m-96: 6rem;
     --primitive-m-32: 2rem;
     --primitive-m-28: 1.75em;
     --primitive-m-24: 1.5rem;
     --primitive-m-16: 1rem;
     --primitive-m-8: .5rem;
-    --primitive-m-0: 0;
+    --primitive-m-2: .125rem;
 
     /* ----- TOKENS ----- */
     /* ----- Color ----- */
