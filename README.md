@@ -26,8 +26,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor page solution](https://www.frontendmentor.io/solutions/recipe-page-using-custom-marker-flex-grid-counter-variables-bem-DVHcc36uC1)
+- Live Site URL: [dz-recipe-page.vercel.app](https://dz-recipe-page.vercel.app/)
 
 ## My process
 
@@ -47,12 +47,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 With this challenge I learned a lot of things:
 
 - Proper use of `<b>` or `span` instead that`<strong>`;
-- [New HTML tags](#table) that I never used before `<table>`\, `<tr>`\  ,`<td>`;
-- [How to style `<table>` and his elements](#table);
+- New HTML tags that I never used before `<table>`, `<tr>`,`<td>`;
+- How to style `<table>` and his elements;
 - The `:last-child` pseudo-class;
 - The `::marker` pseudo-element and how to work with it;
-- [How to create a custom `::marker` for `<ul>` and `<ol>`](#custom-marker-and-counter-function);
-- [How to work with `counter()` function](#custom-marker-and-counter-function).
+- How to create a custom `::marker` for `<ul>` and `<ol>`;
+- How to work with `counter()` function.
 
 ##### Table
 ```html
@@ -163,30 +163,23 @@ Within next challenge I want to continue focusing on **CSS Grid**, reinforce my 
 
 - [Use <b> or <span> instead of <strong>](https://html.com/tags/strong/) - This article was help me to understand wich **HTML** tags was more appropriately to **bold** text.
 
-- [How to create a custom marker for a list](https://stackoverflow.com/questions/78394172/centering-vertically-multiple-line-list-element-to-the-dot) -
+- [How to create a custom marker for a list](https://stackoverflow.com/questions/78394172/centering-vertically-multiple-line-list-element-to-the-dot) - This article from stackoverflow contain the solution that I applied to make custom marker for the `li` tags.
 
 - [More on how to create custom marker](https://idkshite.com/posts/vertical-center-bullet) - I didn't use this method but I tried it and I think in other scenarios it could be usefull.
 
-- [Why we need a custom marker](https://stackoverflow.com/questions/71911768/css-list-marker-not-inline-with-text) -
+- [Why we need a custom marker](https://stackoverflow.com/questions/71911768/css-list-marker-not-inline-with-text) - This article explain why in certain case we need to use custom marker.
 
-- [](https://www.example.com) -
+- [A Guide to CSS counter](https://www.samanthaming.com/tidbits/53-css-counter/) - A usefull guide to work with **CSS** `counter()` function, I used it as reference to build up custom marker for `<ol>` in my project.
 
-- [](https://www.example.com) -
+- [<article> vs <section> ](https://www.smashingmagazine.com/2020/01/html5-article-section/) - A good article about the right choose of `<article>` over `<section>` element
 
-- [](https://www.example.com) -
-
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Reset by Andy Bell](https://piccalil.li/blog/a-more-modern-css-reset/) - As every challenge the **CSS** Reset by Andy Bell.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@dedo-dev](https://www.frontendmentor.io/profile/dedo-dev)
+- Linkedin - [@daniele-zeppieri](https://www.linkedin.com/in/daniele-zeppieri-0b1a36252/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+A special thanks to [@Code-Beaker](https://www.frontendmentor.io/profile/Code-Beaker), he suggested me to split my CSS into multiple files to keep it cleaner (Ex. `index.css`, `variable.css`, `reset.css`).
