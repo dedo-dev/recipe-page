@@ -47,7 +47,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 With this challenge I learned a lot of things:
 
 - Proper use of `<b>` or `span` instead that`<strong>`;
-- [`New HTML tags that I never used before `<table>`, `<tr>`,`<td>`](#table);
+- [`New HTML tags](#table) that I never used before `<table>`, `<tr>`,`<td>`;
 - [`How to style `<table>` and his elements`](#table);
 - The `:last-child` pseudo-class;
 - The `::marker` pseudo-element and how to work with it;
