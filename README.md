@@ -49,8 +49,8 @@ With this challenge I learned a lot of things:
 - Proper use of `<b>` or `span` instead that`<strong>`;
 - [`New HTML tags that I never used before `<table>`, `<tr>`,`<td>`](#table);
 - [`How to style `<table>` and his elements`](#table);
-- `:last-child` pseudo-class;
-- `::marker` pseudo-element and how to work with it;
+- The `:last-child` pseudo-class;
+- The `::marker` pseudo-element and how to work with it;
 - [`How to create a custom `::marker` for `<ul>` and `<ol>``](#custom-marker-and-counter-function);
 - [`How to work with `counter()` function`](#custom-marker-and-counter-function).
 
