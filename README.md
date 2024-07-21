@@ -46,20 +46,22 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 With this challenge I learned a lot of things:
 
-- [`Table`](#Table)New ==HTML== tags that I never used before `<table>`, `<tr>`,`<td>`;
-- How to style `<table>` and her elements;
+- [`New HTML`](#Table) tags that I never used before `<table>`, `<tr>`,`<td>`;
+- How to style `<table>` and his elements;
 - `::marker` pseudo-element and how to work with it;
 - How to create a custom `::marker` for `<ul>` and `<ol>`;
 - How to work with `counter()` function;
 - Proper use of `<b>` instead that`<strong>`;
 - `:last-child` pseudo-class;
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+##### Table
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<table>
+  <tr class="d-grid">
+    <td>Calories</td>
+    <td class="accent"><b>277kcal</b></td>
+  </tr>
+</table>
 ```
 ```css
 .proud-of-this-css {
@@ -83,7 +85,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
-- ###### <p>Table<p>
+
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
