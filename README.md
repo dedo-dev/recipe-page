@@ -46,13 +46,13 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 With this challenge I learned a lot of things:
 
-- [`New HTML`](#Table) tags that I never used before `<table>`, `<tr>`,`<td>`;
-- How to style `<table>` and his elements;
-- `::marker` pseudo-element and how to work with it;
-- How to create a custom `::marker` for `<ul>` and `<ol>`;
-- How to work with `counter()` function;
-- Proper use of `<b>` instead that`<strong>`;
+- Proper use of `<b>` or `span` instead that`<strong>`;
+- [`New HTML tags that I never used before `<table>`, `<tr>`,`<td>`](#table);
+- [`How to style `<table>` and his elements`](#table);
 - `:last-child` pseudo-class;
+- `::marker` pseudo-element and how to work with it;
+- [`How to create a custom `::marker` for `<ul>` and `<ol>``](#custom-marker-and-counter-function);
+- [`How to work with `counter()` function`](#custom-marker-and-counter-function).
 
 ##### Table
 ```html
@@ -64,32 +64,118 @@ With this challenge I learned a lot of things:
 </table>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* Style for nutrition table */
+table {
+    border-collapse: collapse;
+}
+
+tr  {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--primitive-m-16);
+    border-block-end: 1px solid var(--clr-divider);
+}
+
+td {
+    padding-inline: var(--primitive-p-32) 0;
+    padding-block: var(--primitive-p-12);
+}
+
+td:last-child {
+    padding-inline: 0 var(--primitive-p-32);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+##### Custom marker and counter function
+```html
+<ul class="card-recipe__list d-grid">
+  <li class="card-recipe__list-item bullett">2-3 large eggs</li>
+</ul>
+
+<ol class="card-recipe__list d-grid">
+  <li class="card-recipe__list-item numered"><span><b>Beat the eggs:</b>
+    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+    You can add a tablespoon of water or milk for a fluffier texture.</span>
+  </li>
+</ol>
+```
+```css
+/* ul and ol style */
+.card-recipe__list {
+    gap: var(--primitive-m-8);
+    padding: 0;
+}
+
+/* Set marker position inside to ol */
+.card-recipe__section > ol {
+    list-style-position: inside;
+    counter-reset: list-num;
+}
+
+/* General style for li items */
+.card-recipe__list-item {
+    display: flex;
+    gap: var(--primitive-m-28);
+}
+
+/* Align bullett points vertically
+   center with the text inside li
+*/
+.bullett {
+    align-items: center;
+}
+
+/* Define bullett points for ul li */
+.bullett::before {
+    position: relative;
+    content: '\2022';
+    left: var(--primitive-m-8);
+    font-size: 1.5rem;
+    color: var(--clr-cardSectionHeading);
+}
+
+/* Bulletts modifier to set the color
+   to the bulletts of card banner*/
+.bullett--info::before {
+    color: var(--clr-cardInfoHeading);
+}
+
+/* Define number points for ol li */
+.numered::before {
+    position: relative;
+    counter-increment: list-num;
+    content: counter(list-num) ". ";
+    left: var(--primitive-m-8);
+    font-weight: var(--fw-bold);
+    color: var(--clr-cardSectionHeading);
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Within next challenge I want to continue focusing on **CSS Grid**, reinforce my knwoledge with the elements that I learned in this challenge, both side, **CSS** and **HTML** and even start to use some **JavsScript**.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How to use :last-child selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child) - I found this link usefull because I know the concept of that selector, but I never work with it and I didn't know the syntax.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Getting started with <table>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) - As mentioned before there is some **HTML** tag that I never use before, I use thi article to start with it.
+
+- [More Docs on <table> and his childs](https://www.w3schools.com/html/html_tables.asp) - Just another reference to build a nice table.
+
+- [Use <b> or <span> instead of <strong>](https://html.com/tags/strong/) - This article was help me to understand wich **HTML** tags was more appropriately to **bold** text.
+
+- [How to create a custom marker for a list](https://stackoverflow.com/questions/78394172/centering-vertically-multiple-line-list-element-to-the-dot) -
+
+- [More on how to create custom marker](https://idkshite.com/posts/vertical-center-bullet) - I didn't use this method but I tried it and I think in other scenarios it could be usefull.
+
+- [Why we need a custom marker](https://stackoverflow.com/questions/71911768/css-list-marker-not-inline-with-text) -
+
+- [](https://www.example.com) -
+
+- [](https://www.example.com) -
+
+- [](https://www.example.com) -
+
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
