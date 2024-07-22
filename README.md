@@ -157,11 +157,11 @@ Within next challenge I want to continue focusing on **CSS Grid**, reinforce my 
 
 - [How to use :last-child selector](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child) - I found this link usefull because I know the concept of that selector, but I never work with it and I didn't know the syntax.
 
-- [Getting started with <table>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) - As mentioned before there is some **HTML** tag that I never use before, I use thi article to start with it.
+- [Getting started with table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) - As mentioned before there is some **HTML** tag that I never use before, I use thi article to start with it.
 
-- [More Docs on <table> and his childs](https://www.w3schools.com/html/html_tables.asp) - Just another reference to build a nice table.
+- [More Docs on table and his childs](https://www.w3schools.com/html/html_tables.asp) - Just another reference to build a nice table.
 
-- [Use <b> or <span> instead of <strong>](https://html.com/tags/strong/) - This article was help me to understand wich **HTML** tags was more appropriately to **bold** text.
+- [Use b or span instead of strong](https://html.com/tags/strong/) - This article was help me to understand wich **HTML** tags was more appropriately to **bold** text.
 
 - [How to create a custom marker for a list](https://stackoverflow.com/questions/78394172/centering-vertically-multiple-line-list-element-to-the-dot) - This article from stackoverflow contain the solution that I applied to make custom marker for the `li` tags.
 
@@ -171,7 +171,7 @@ Within next challenge I want to continue focusing on **CSS Grid**, reinforce my 
 
 - [A Guide to CSS counter](https://www.samanthaming.com/tidbits/53-css-counter/) - A usefull guide to work with **CSS** `counter()` function, I used it as reference to build up custom marker for `<ol>` in my project.
 
-- [<article> vs <section>](https://www.smashingmagazine.com/2020/01/html5-article-section/) - A good article about the right choose of `<article>` over `<section>` element
+- [`article` vs `section`](https://www.smashingmagazine.com/2020/01/html5-article-section/) - A good article about the right choose of `<article>` over `<section>` element
 
 - [CSS Reset by Andy Bell](https://piccalil.li/blog/a-more-modern-css-reset/) - As every challenge the **CSS** Reset by Andy Bell.
 
