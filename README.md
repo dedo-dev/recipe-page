@@ -171,7 +171,7 @@ Within next challenge I want to continue focusing on **CSS Grid**, reinforce my 
 
 - [A Guide to CSS counter](https://www.samanthaming.com/tidbits/53-css-counter/) - A usefull guide to work with **CSS** `counter()` function, I used it as reference to build up custom marker for `<ol>` in my project.
 
-- [<article> vs <section> ](https://www.smashingmagazine.com/2020/01/html5-article-section/) - A good article about the right choose of `<article>` over `<section>` element
+- [<article> vs <section>](https://www.smashingmagazine.com/2020/01/html5-article-section/) - A good article about the right choose of `<article>` over `<section>` element
 
 - [CSS Reset by Andy Bell](https://piccalil.li/blog/a-more-modern-css-reset/) - As every challenge the **CSS** Reset by Andy Bell.
 

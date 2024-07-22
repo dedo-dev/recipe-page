@@ -109,7 +109,7 @@ body {
     position: relative;
     content: '\2022';
     left: var(--primitive-m-8);
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: var(--clr-cardSectionHeading);
 }
 
